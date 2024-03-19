@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View River</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <a href="{{ url_for('index') }}" class="go-back">Go Back</a>
+        <h1>River Info</h1>
+        <table>
+            <tr>
+                <th>River Name</th>
+                <th>City</th>
+                <th>Start Coordinate</th>
+                <th>End Coordinate</th>
+                <th>River Length</th>
+                <th>Highest Rappel</th>
+            </tr>
+            <tr>
+                <td>{{ river_info.name }}</td>
+                <td>{{ city_name }}</td>
+                <td>{{ river_info.start_coord }}</td>
+                <td>{{ river_info.end_coord }}</td>
+                <td>{{ river_info.river_length }} meters</td>
+                <td>{{ river_info.highest_rappel }} meters</td>
+            </tr>
+        </table>
+        <div class="croqui-link">
+            <p><a href="{{ river_info.croqui }}" target="_blank">View Croqui (PDF)</a></p>
+            <p ><h5><u>WARNING: Not every might be available in english</u></h5></p>
+        </div>
+    </div>
+</body>
+
+</html>

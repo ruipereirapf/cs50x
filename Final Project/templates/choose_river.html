@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a River</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <a href="{{ url_for('index') }}" class="go-back">Go Back</a>
+        <h1>Choose a River in {{ city_name }}</h1>
+        <form action="{{ url_for('view_river') }}" method="post">
+            {% for river in rivers %}
+            <button type="submit" name="river_id" value="{{ river.id }}">{{ river.name }}</button>
+            {% endfor %}
+            <input type="hidden" name="city_id" value="{{ city_id }}">
+        </form>
+    </div>
+</body>
+
+</html>
