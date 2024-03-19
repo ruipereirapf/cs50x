@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canyoning Portugal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Choose a City</h1>
+        <form action="{{ url_for('choose_river') }}" method="post">
+            {% for city in cities %}
+            <button type="submit" name="city_id" value="{{ city.id }}">{{ city.name }}</button>
+            {% endfor %}
+        </form>
+    </div>
+</body>
+
+</html>

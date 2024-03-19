@@ -1,0 +1,6 @@
+Q1: If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+A1: By using the query SELECT AVG(danceability), AVG(energy), AVG(valence) FROM songs;
+And based on the average values of danceability = 0.71646, energy = 0.65906 and valence = 0.484443. I would characterize their audio aura as more danceful aura.
+
+Q2: Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+A2: In order to help calculate better the aura i would proprose more columns with info such as 'times listened' for each song p.e.

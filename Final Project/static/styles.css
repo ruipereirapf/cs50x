@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+button, a.go-back {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style for "Go Back" button */
+button.go-back, a.go-back {
+    background-color: #e74c3c; /* Red color for "Go Back" button */
+    color: #fff;
+}
+
+button:hover, a.go-back:hover {
+    background-color: #3498db; /* Blue color for other buttons on hover */
+}
+
+/* Style for buttons in choose_river.html and index.html */
+button, a {
+    background-color: #87CEEB; /* Light blue background */
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    background-color: #98FB98; /* Light green on hover */
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db; /* Blue color for table header */
+    color: #fff;
+}
+
+.croqui-link {
+    margin-top: 20px;
+}
