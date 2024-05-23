@@ -23,3 +23,7 @@ CS50x - Introduction to Computer Science is designed to provide students with a 
 ## Repository Purpose
 
 This repository serves as a collection of all the code written during the course. It includes every line of code from the exercises and projects, providing a complete reference for the concepts covered in CS50x.
+
+## Contact Information
+
+Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/ruifernpereira/) for any questions or collaborations.
